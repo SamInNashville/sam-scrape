@@ -1,0 +1,32 @@
+{
+  "name": "sam-scrape",
+  "version": "1.0.0",
+  "description": "Scrape the web with one command.",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "bin": {
+    "sam-scrape": "./dist/bin/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && node scripts/postbuild.mjs",
+    "test": "npm run build && vitest run",
+    "dev": "tsx bin/cli.ts"
+  },
+  "keywords": ["scraper", "cli", "real-estate", "jobs", "web-scraping"],
+  "author": "Sam M.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "commander": "^12.1.0",
+    "csv-stringify": "^6.4.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}

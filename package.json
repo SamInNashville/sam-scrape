@@ -15,6 +15,15 @@
   "keywords": ["scraper", "cli", "real-estate", "jobs", "web-scraping"],
   "author": "Sam M.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamInNashville/sam-scrape"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
   "engines": {
     "node": ">=18.0.0"
   },
